@@ -1,0 +1,73 @@
+/* cores e fontes */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    /* roboto tipo especial de sans-serif */
+    font-size: 16px;
+}
+
+a {
+    color: #d4d4da;
+    text-decoration: underline;
+    /* sublinhado */
+}
+
+/* passar mouse */
+a:hover {
+    color:#7400b7;
+}
+
+header {
+    background-color: #a200ff;
+    /* laranja */
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+nav {
+    background-color: #4b40bf;
+    float: right;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #6e61ff;
+}
+
+/* Seleções */
+section {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+aside {
+    background-color: #584be5;
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    float: right;
+    width: 25%;
+}
+
+footer {
+    background-color: #7400b7;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: right;
+}
