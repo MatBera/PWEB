@@ -1,0 +1,33 @@
+header {
+    background-color: rgb(70, 193, 255);
+    color: #0091e0;
+    padding: 10px 20px;
+    
+}
+
+body{
+    font-family: "Segoe UI", 'Segoe UI', Tahoma;
+    margin: 100;
+    padding: 0;
+}
+
+button{
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(70, 193, 255);
+}
+
+form{
+    padding: 10px 150px;
+}
+
+p{
+    padding: 5px 150px; 
+}
+
+footer {
+    background-color: rgb(70, 193, 255);
+    color: #0091e0;
+    padding: 10px 100px;
+    text-align:center;
+    
+}
