@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 12</title>
+</head>
+
+<body>
+
+    <script>
+        function Retangulo(x, y) {
+            this.base = x;
+            this.altura = y;
+
+            this.CalcArea = function () {
+                return this.altura * this.base;
+            };
+        }
+
+        objRetangulo = new Retangulo(7, 5);
+
+        alert("A área do retângulo de x = 7 e y = 5 é de: " + objRetangulo.CalcArea());
+
+        class Conta {
+            constructor(nomeCorrentista, banco, numeroConta, saldo) {
+                this._nomeCorrentista = nomeCorrentista;
+                this._banco = banco;
+                this._numeroConta = numeroConta;
+                this._saldo = saldo;
+            }
+
+            get nomeCorrentista() {
+                return this._nomeCorrentista;
+            }
+
+            set nomeCorrentista(nomeCorrentista) {
+                this._nomeCorrentista = nomeCorrentista;
+            }
+
+            get banco() {
+                return this._banco;
+            }
+
+            set banco(banco) {
+                this._banco = banco;
+            }
+
+            get numeroConta() {
+                return this._numeroConta;
+            }
+
+            set numeroConta(numeroConta) {
+                this._numeroConta = numeroConta;
+            }
+
+            get saldo() {
+                return this._saldo;
+            }
+
+            set saldo(valor) {
+                this._saldo = valor;
+            }
+        }
+
+        class Corrente extends Conta {
+            constructor(nomeCorrentista, banco, numeroConta, saldo, saldoEspecial) {
+                super(nomeCorrentista, banco, numeroConta, saldo);
+                this._saldoEspecial = saldoEspecial;
+            }
+
+            get saldoEspecial() {
+                return this._saldoEspecial;
+            }
+
+            set saldoEspecial(valor) {
+                this._saldoEspecial = valor;
+            }
+        }
+
+        class Poupanca extends Conta {
+            constructor(nomeCorrentista, banco, numeroConta, saldo, juros, dataVencimento) {
+                super(nomeCorrentista, banco, numeroConta, saldo);
+                this._juros = juros;
+                this._dataVencimento = dataVencimento;
+            }
+
+            get juros() {
+                return this._juros;
+            }
+
+            set juros(valor) {
+                this._juros = valor;
+            }
+
+            get dataVencimento() {
+                return this._dataVencimento;
+            }
+
+            set dataVencimento(data) {
+                this._dataVencimento = data;
+            }
+        }
+
+        contaCorrente = new Corrente("Adam Roux Maphey", "Nubank", 12345678, "3.259,25", "5.000,00");
+        contaPoupanca = new Poupanca("Rita Von Huntt", "Bradesco", 87654321, "15.943,94", "2.800,00", "14/10/2024");
+
+        alert(`Nome: ${contaCorrente.nomeCorrentista}`);
+        alert(`Banco: ${contaCorrente.banco}`);
+        alert(`Número da Conta: ${contaCorrente.numeroConta}`);
+        alert(`Saldo: R$ ${contaCorrente.saldo}`);
+        alert(`Saldo Especial: R$ ${contaCorrente.saldoEspecial}`);
+
+        alert(`Nome: ${contaPoupanca.nomeCorrentista}\nBanco: ${contaPoupanca.banco}\nNúmero da Conta: ${contaPoupanca.numeroConta}\nSaldo: R$ ${contaPoupanca.saldo}\nJuros: R$ ${contaPoupanca.juros}\nData de Vencimento: ${contaPoupanca.dataVencimento}`);
+
+    </script>
+</body>
+
+</html>
