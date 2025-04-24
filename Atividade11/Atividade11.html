@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 11</title>
+</head>
+
+<body>
+
+    <script>
+        var funcionario1 = {};
+        funcionario1.matricula = "0001";
+        funcionario1.nome = "Alice Morgnstein"
+        funcionario1.funcao = "Diretora"
+
+        var funcionario2 = new Object();
+        funcionario2.matricula = "0002"
+        funcionario2.nome = "Joana D'arc"
+        funcionario2.funcao = "Supervisora"
+
+        var funcionario3 = {
+            matricula: prompt("Digite a matrícula do funcionário 3: "),
+            nome: prompt("Digite o nome do funcionário 3: "),
+            funcao: prompt("Digite a função do funcionário 3: ")
+        }
+
+        alert("Funcionario 1:\nMatricula: " + funcionario1.matricula + "\nNome: " + funcionario1.nome + "\nFução: " + funcionario1.funcao);
+        alert("Funcionario 2:\nMatricula: " + funcionario2.matricula + "\nNome: " + funcionario2.nome + "\nFução: " + funcionario2.funcao);
+        alert("Funcionario 3:\nMatricula: " + funcionario3.matricula + "\nNome: " + funcionario3.nome + "\nFução: " + funcionario3.funcao);
+    </script>
+
+</body>
+
+</html>
